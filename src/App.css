@@ -1,0 +1,226 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@700&display=swap');
+
+/* body{
+  background-image: url(bgImg.jpg);
+  background-size: cover;
+
+} */
+*{
+  margin: 0;
+}
+.container{
+  background-image: url(bgImg.jpg);
+  background-size: cover;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height: 100vh;
+  align-items: center;
+}
+.pass-plate{
+ 
+  height: 35vh;
+  width: 40vw;
+  background: linear-gradient(rgba(128, 129, 129, 0.1), rgba(140, 143, 143, 0.1));; 
+  backdrop-filter: blur(10px);
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px rgba(55, 56, 56, 0.285);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.pass-input-plate{
+  display: flex;
+  /* justify-content: space-evenly; */
+  /* margin-left: 1rem;
+  margin-right: 1rem; */
+}
+.pass-input{
+  height: 2.8rem;
+  border-radius: 20px 0 0 20px;
+   width: 30vw;
+  font-size: 1.5rem;
+  border: none;
+}
+.cpy-btn{
+  width: 6vw;
+  font-size: 100%;
+  background: linear-gradient(45deg, rgba(121, 215, 255, 0.788), rgba(255, 68, 180, 0.738), rgb(255, 175, 77), rgb(251, 251, 126));
+  border: none;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+  background-size: 300%;
+  background-position: left;
+  transition: background-position .9s;
+}
+
+.cpy-btn:hover{
+  background-position: right;
+  
+
+}
+.rangebtn{
+ accent-color: pink;
+  
+}
+h2{
+  font-size: 2.3rem;
+  font-family: 'Sulphur Point', sans-serif;
+}
+.lenset{
+  font-size: 1.2rem;
+  font-family: 'Sulphur Point', sans-serif;
+  margin-left: 0;
+
+}
+.numInput{
+  font-size: 1.2rem;
+  /* margin-left: 1rem; */
+  font-family: 'Sulphur Point', sans-serif;
+}
+.characterInput{
+  font-size: 1.2rem;
+  font-family: 'Sulphur Point', sans-serif;
+}
+.num-char-range{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+   
+}
+#numInput{
+  margin-left: 1rem;
+  accent-color: pink;
+}
+#characterInput{
+  margin-left: 1rem;
+  accent-color: pink;
+}
+
+@media  (max-width: 1040px) {
+   html{
+    font-size: 80%;
+   }
+  
+}
+
+@media  (max-width: 896px) {
+   
+  .pass-plate{
+    width: 70vw;
+  }
+  .pass-input{
+    width: 50vw;
+  }
+  
+}
+@media  (max-width:720px) {
+  .pass-plate{
+    width: 80vw;
+  }
+  .pass-input{
+    width:45vw;
+  }
+  .cpy-btn{
+    width: 15vw;
+  }
+   
+}
+  
+
+@media (max-width:625px) {
+  .pass-plate{
+    width: 80vw;
+  }
+  input[type="checkbox"]{
+    transform: scale(0.7);
+    vertical-align: middle;
+  }
+  input[type="range"]{
+    transform: scale(0.9);
+    vertical-align: middle;
+  }
+}
+
+@media  (max-width:500px) {
+  h2{
+    text-align: center;
+     
+  }
+  html{
+    font-size: 78%;
+  }
+  .pass-plate{
+    width: 80vw;
+  }
+  .pass-input{
+    width:55vw;
+  }
+  input[type="checkbox"]{
+    transform: scale(0.7);
+    vertical-align: middle;
+  }
+  input[type="range"]{
+    transform: scale(0.9);
+    vertical-align: middle;
+  }
+  
+}
+
+@media (max-width:470px) {
+  .pass-plate{
+    width:85vw;
+  }
+  .pass-input{
+    width: 100%;
+  }
+   
+   
+  }
+
+@media (max-width:425px) {
+  html{
+    font-size: 70%;
+  }
+
+   
+  input[type="checkbox"]{
+    transform: scale(0.7);
+    vertical-align: middle;
+  }
+  input[type="range"]{
+    transform: scale(0.9);
+    vertical-align: middle;
+  }
+  
+}
+@media (max-width:378px) {
+  html{
+    font-size: 60%;
+  }
+  input[type="checkbox"]{
+    transform: scale(0.7);
+    vertical-align: middle;
+  }
+  input[type="range"]{
+    transform: scale(0.9);
+    vertical-align: middle;
+  }
+  .pass-input{
+    width: 55vw;
+  }
+}
+@media (max-width:365px) {
+  .pass-plate{
+    width: 80vw;
+  }
+  .num-char-range{
+    display: flex;
+    flex-direction: column;
+  }
+  
+}
